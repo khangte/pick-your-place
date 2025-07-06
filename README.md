@@ -88,7 +88,7 @@ Streamlit과 GeoPandas를 활용한 웹 대시보드 상에서 서울시 지도�
 | 시각화     | [Streamlit](https://streamlit.io)    |
 | 지도처리   | [GeoPandas](https://geopandas.org)   |
 | 데이터 처리| [Pandas](https://pandas.pydata.org) |
-| 데이터베이스 | [SQLite](https://www.sqlite.org)    |
+| 데이터베이스 | MySQL    |
 | 공공 API   | [VWorld](https://www.vworld.kr) / [서울 열린데이터광장](https://data.seoul.go.kr) |
 | 버전관리   | [Git](https://git-scm.com) / [GitHub](https://github.com) |
 | 협업 툴    | [Notion](https://www.notion.so) / [draw.io](https://draw.io) |
