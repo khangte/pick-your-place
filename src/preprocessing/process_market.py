@@ -2,11 +2,11 @@ import pandas as pd
 import os
 import sys
 
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-from geocoding.vworld_geocode import road_address_to_coordinates
-from geocoding.admin_mapper import extract_gu_and_dong, get_gu_dong_codes
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../..')))
+from src.geocoding.vworld_geocode import road_address_to_coordinates
+from src.geocoding.admin_mapper import extract_gu_and_dong, get_gu_dong_codes
 
-def load_market_csv(path: str = "data/raw/market__raw.csv") -> pd.DataFrame:
+def load_market_csv(path: str = "../../data/raw/market__raw.csv") -> pd.DataFrame:
     if not os.path.exists(path):
         raise FileNotFoundError(f"파일이 존재하지 않습니다: {path}")
 
@@ -21,7 +21,7 @@ def load_market_csv(path: str = "data/raw/market__raw.csv") -> pd.DataFrame:
 def process_market_data(df: pd.DataFrame) -> pd.DataFrame:
     needed_cols = ['도로명주소', '시군구', '시도', '시장명', '시장코드', '지번주소']
     df = df[[col for col in needed_cols if col in df.columns]]
-    df = df[df['시도'] == '서울특별시']
+    # df = df[df['시도'] == '서울특별시']
 
     df = df.rename(columns={
         '도로명주소': 'road_address',
