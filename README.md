@@ -86,7 +86,7 @@ Streamlit과 GeoPandas를 활용한 웹 대시보드 상에서 서울시 지도�
 | 시각화     | [Streamlit](https://streamlit.io)    |
 | 지도처리   | [GeoPandas](https://geopandas.org)   |
 | 데이터 처리| [Pandas](https://pandas.pydata.org) |
-| 데이터베이스 | MySQL   |
+| 데이터베이스 | MySQL    |
 | 공공 API   | [VWorld](https://www.vworld.kr) / [서울 열린데이터광장](https://data.seoul.go.kr) |
 | 버전관리   | [Git](https://git-scm.com) / [GitHub](https://github.com) |
 | 협업 툴    | [Notion](https://www.notion.so) / [draw.io](https://draw.io) |
@@ -165,15 +165,15 @@ Streamlit과 GeoPandas를 활용한 웹 대시보드 상에서 서울시 지도�
 
 | 번호 | 데이터명 | 출처 링크 | 설명 |
 |------|----------|-----------|------|
-| 1  | 서울시 5대 범죄 발생현황 통계 | [바로가기](https://data.seoul.go.kr/dataList/316/S/2/datasetView.do) | 자치구별 범죄 통계 |
-| 2  | 서울시 인구밀도 통계 | [바로가기](https://data.seoul.go.kr/dataList/10584/S/2/datasetView.do) | 서울시 인구 밀도 정보 |
-| 3  | 서울시 대규모점포 인허가 정보 | [바로가기](https://data.seoul.go.kr/dataList/OA-16096/S/1/datasetView.do) | 대형마트, 백화점 등 유통시설 위치 |
-| 4  | 서울시 휴게음식점 인허가 정보 | [바로가기](https://data.seoul.go.kr/dataList/OA-16095/S/1/datasetView.do) | 카페, 분식집 등 식음료 매장 위치 |
-| 5  | 서울시 금융기관 통계 | [바로가기](https://data.seoul.go.kr/dataList/10129/S/2/datasetView.do) | 은행, 금융기관 수 및 위치 |
-| 6  | 편의점 | [바로가기](https://safemap.go.kr/opna/data/dataView.do?objtId=145) | 전국 편의점 위치 정보 |
-| 7  | 전통시장현황 | [바로가기](https://www.data.go.kr/data/15052837/fileData.do) | 전국 전통시장 위치 정보 |
-| 8  | 경찰서 | [바로가기](https://www.data.go.kr/data/15124966/fileData.do) | 전국 경찰서 위치 정보 |
-| 9  | 서울시 병의원 위치 정보 | [바로가기](https://data.seoul.go.kr/dataList/OA-20337/S/1/datasetView.do) | 병원 및 의원 위치 정보 |
+| 1 | 서울시 5대 범죄 발생현황 통계 | [바로가기](https://data.seoul.go.kr/dataList/316/S/2/datasetView.do) | 자치구별 범죄 통계 |
+| 2 | 서울시 인구밀도 통계 | [바로가기](https://data.seoul.go.kr/dataList/10584/S/2/datasetView.do) | 서울시 인구 밀도 정보 |
+| 3 | 서울시 대규모점포 인허가 정보 | [바로가기](https://data.seoul.go.kr/dataList/OA-16096/S/1/datasetView.do) | 대형마트, 백화점 등 유통시설 위치 |
+| 4 | 서울시 휴게음식점 인허가 정보 | [바로가기](https://data.seoul.go.kr/dataList/OA-16095/S/1/datasetView.do) | 카페, 분식집 등 식음료 매장 위치 |
+| 5 | 서울시 금융기관 통계 | [바로가기](https://data.seoul.go.kr/dataList/10129/S/2/datasetView.do) | 은행, 금융기관 수 및 위치 |
+| 6 | 편의점 | [바로가기](https://safemap.go.kr/opna/data/dataView.do?objtId=145) | 전국 편의점 위치 정보 |
+| 7 | 전통시장현황 | [바로가기](https://www.data.go.kr/data/15052837/fileData.do) | 전국 전통시장 위치 정보 |
+| 8 | 경찰서 | [바로가기](https://www.data.go.kr/data/15124966/fileData.do) | 전국 경찰서 위치 정보 |
+| 9 | 서울시 병의원 위치 정보 | [바로가기](https://data.seoul.go.kr/dataList/OA-20337/S/1/datasetView.do) | 병원 및 의원 위치 정보 |
 | 10 | 서울시 병원 인허가 정보 | [바로가기](https://data.seoul.go.kr/dataList/OA-16479/S/1/datasetView.do) | 병원 인허가 기반 상세 정보 |
 | 11 | 서울시 학교 기본정보 | [바로가기](https://data.seoul.go.kr/dataList/OA-20502/S/1/datasetView.do) | 초·중·고 등 학교 위치 |
 | 12 | 서울시 공공도서관 현황정보 | [바로가기](https://data.seoul.go.kr/dataList/OA-394/S/1/datasetView.do) | 공공도서관 위치 및 면적 정보 |
