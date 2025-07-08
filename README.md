@@ -64,7 +64,7 @@ Streamlit과 GeoPandas를 활용한 웹 대시보드 상에서 서울시 지도�
 
 - 사용자의 중요도를 고려한 카테고리를 선택 
 
-![i1](assets/image1_1.png)
+![i1](assets/image5.png)
 
 - 추천점수를 기반으로 행정동의 지역을 명도로 표현
 
