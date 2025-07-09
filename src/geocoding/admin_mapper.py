@@ -1,9 +1,11 @@
+import os
 import re
 import pandas as pd
 
 # 행정동 코드 엑셀 불러오기 (최초 1회)
 # DONG_CODE_PATH = 'data/reference/KIKcd_H.20250701.xlsx'
-MIX_MAPPING_PATH = '../../data/reference/KIKmix_seoul.20250701.csv'
+project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), "../.."))
+MIX_MAPPING_PATH = os.path.join(project_root, "data/reference/KIKmix_seoul.20250701.csv")
 
 # dong_df = pd.read_excel(DONG_CODE_PATH, dtype=str)
 mix_df = pd.read_csv(MIX_MAPPING_PATH, dtype=str)

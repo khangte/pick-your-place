@@ -8,7 +8,7 @@ API_KEY = os.getenv("KAKAO_API_KEY")
 
 def coord_to_region(longitude: float, latitude: float) -> tuple[Any, Any, Any] | None:
     """
-    위도/경도로 주소(도로명 주소)를 반환하는 함수 (카카오 API 사용)
+    위도/경도로 주소(행정동 주소)를 반환하는 함수 (카카오 API 사용)
     """
     headers = {"Authorization": f"KakaoAK {API_KEY}"}
     url = "https://dapi.kakao.com/v2/local/geo/coord2regioncode.json"
@@ -49,7 +49,7 @@ def coord_to_region(longitude: float, latitude: float) -> tuple[Any, Any, Any] |
 
 def address_to_coord(address: str) -> tuple[float, float] | None:
     """
-    주소 → 위도, 경도 변환
+    주소 → 위도/경도 변환
     :param address: 예: "전북 삼성동 100"
     :return: (longitude, latitude) 튜플 또는 None
     """
@@ -67,7 +67,7 @@ def address_to_coord(address: str) -> tuple[float, float] | None:
                 y = float(documents[0]["y"])  # 위도
                 return x, y
             else:
-                print("⚠️ 주소 검색 결과 없음")
+                print(f"⚠️ 주소 검색 결과 없음 → {address}")
         else:
             print(f"[API 오류] status={response.status_code} → {response.text}")
     except Exception as e:

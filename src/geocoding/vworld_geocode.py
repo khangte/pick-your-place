@@ -26,7 +26,7 @@ def road_address_to_coordinates(road_addr: str) -> tuple:
         }
         response = requests.get(url, params=params)
         data = response.json()
-        print("응답 내용:", response.text)
+        # print("응답 내용:", response.text)
 
         if response.status_code == 200 and 'EPSG_4326_X' in data and 'EPSG_4326_Y' in data:
             return float(data['EPSG_4326_X']), float(data['EPSG_4326_Y'])
