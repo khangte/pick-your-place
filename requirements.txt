@@ -1,28 +1,29 @@
 # python == 3.11 fix
-pandas==2.2.2
-numpy==1.26.4
-requests==2.31.0
-beautifulsoup4==4.12.3
-lxml==5.2.1
+pandas
+numpy
+requests
+beautifulsoup4
+lxml
 
-geopandas==0.14.3
-shapely==2.0.4
-fiona==1.9.6
-pyproj==3.6.1
+geopandas
+shapely
+fiona
+pyproj
 
-folium==0.16.0
-matplotlib==3.8.4
+folium
+matplotlib
 
-scikit-learn==1.4.2
-xgboost==2.0.3
+scikit-learn
+xgboost
 
-streamlit==1.35.0
-tqdm==4.66.4
-python-dotenv==1.0.1
+streamlit
+tqdm
+python-dotenv
 
-openpyxl==3.1.0
-streamlit-folium==0.15.0
+openpyxl
+streamlit-folium
 
 pymysql
 jupyterlab
 seaborn
+dotenv

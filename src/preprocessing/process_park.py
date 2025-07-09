@@ -7,7 +7,7 @@ from tqdm import tqdm
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../..")))
 
 # ✅ 내부 함수 import
-from src.geocoding.latlon_to_address import reverse_geocode
+from src.geocoding.kakao_api_function import reverse_geocode
 from src.geocoding.admin_mapper import (
     smart_parse_gu_and_dong,
     extract_gu_and_dong,
