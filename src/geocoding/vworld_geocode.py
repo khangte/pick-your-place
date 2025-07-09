@@ -38,6 +38,38 @@ def road_address_to_coordinates(road_addr: str) -> tuple:
         return None, None
 
 
+def jibun_address_to_coordinates(road_addr: str) -> tuple:
+    """
+    도로명 주소 → (경도, 위도) 좌표 반환
+
+    Args:
+        road_addr (str): 예) '서울특별시 종로구 율곡로 283'
+
+    Returns:
+        (longitude, latitude): tuple or (None, None)
+    """
+    try:
+        url = "https://apis.vworld.kr/jibun2coord.do"
+        params = {
+            "q": road_addr,
+            "output": "json",
+            "epsg": "epsg:4326",
+            "apiKey": VWORLD_API_KEY
+        }
+        response = requests.get(url, params=params)
+        data = response.json()
+        # print("응답 내용:", response.text)
+
+        if response.status_code == 200 and 'EPSG_4326_X' in data and 'EPSG_4326_Y' in data:
+            return float(data['EPSG_4326_X']), float(data['EPSG_4326_Y'])
+        else:
+            print(f"[주소→좌표 실패] {road_addr}")
+            return None, None
+    except Exception as e:
+        print(f"[예외 발생 - 주소→좌표] {e}")
+        return None, None
+
+
 def coordinates_to_jibun_address(longitude: float, latitude: float) -> str:
     """
     좌표 → 지번주소 반환 (VWorld API 사용)
