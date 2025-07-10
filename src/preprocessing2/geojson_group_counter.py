@@ -58,14 +58,14 @@ OUTPUT_DIR = "data/processed_counts2"
 GEOJSON_PATH = "data/reference/Seoul_HangJeongDong.geojson"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
-# ✅ 처리할 파일 리스트
+# ✅ 처리 대상 파일 목록
 TARGET_FILES = [
     "bus_stop__raw.csv",
     "cctv__raw.csv",
     "hospital__raw.csv",
     "library__raw.csv",
     "park__raw.csv",
-    "safety_bell__raw.xlsx",  # 엑셀도 포함됨
+    "safety_bell__raw.xlsx",
     "street_light__raw.csv",
     "subway_station__raw.csv"
 ]
